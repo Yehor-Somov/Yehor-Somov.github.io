@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payment</title>
+    <link rel="stylesheet" type="text/css" href="paymant.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <img src="images/hand.png" id="hand" />
+    <div class="main_grid">
+      <header>
+        <div class="container">
+          <a href="https://robocode.ua" class="logo">
+            <img src="images/logo.svg" />
+          </a>
+          <h1>Реєстрація на курс «Python початківець»</h1>
+
+          <p>
+            Для входу підлітка у професію за 3 тижні з індивідуальним графіком
+          </p>
+        </div>
+      </header>
+      <div class="header-svg">
+        <svg
+          width="800"
+          height="60"
+          viewBox="0 0 800 60"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <!-- <path
+            class="header-svg-path"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M800 0
+            H0
+            C9.751 0 18.985 3.416 26.235 9.63
+            L73.765 50.37
+            C81.015 56.584 90.249 60 99.797 60
+            H700.2
+            C709.75 60 718.98 56.584 726.23 50.37
+            L773.77 9.63
+            C781.02 3.416 790.25 0 800 0
+            Z"
+            fill="#1646FF"
+          /> -->
+          <path
+            class="header-svg-path"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M800 0
+            H0
+            C9.751 0 18.985 3.416 26.235 9.63
+            L73.765 50.37
+            C81.015 56.584 90.249 60 99.797 60
+            H700.2
+            C709.75 60 718.98 56.584 726.23 50.37
+            L773.77 9.63
+            C781.02 3.416 790.25 0 800 0
+            Z"
+            fill="#1646FF"
+          />
+        </svg>
+      </div>
+
+      <section class="order-area">
+        <div class="order-container">
+          <h2>Заповніть форму нижче для бронювання місця на курсі</h2>
+          <p>
+            Вартість курсу становить 495 грн. Ви можете здійснити оплату онлайн
+          </p>
+          <form id="payment-form" name="pay_for_course" method="POST">
+            <input
+              type="text"
+              id="name-input"
+              name="name_and_surname"
+              placeholder="ВВЕДІТЬ ІМ'Я ТА ПРІЗВИЩЕ"
+            />
+            <input
+              type="tel"
+              id="phone-input"
+              name="user_phone"
+              placeholder="ВВЕДІТЬ ВАШ НОМЕР ТЕЛЕФОНУ"
+            />
+            <input
+              type="email"
+              id="email-input"
+              name="user_email"
+              placeholder="ВВЕДІТЬ ВАШ EMAIL"
+            />
+            <p class="form-terms">
+              Натискаючи на цю кнопку, ви погоджуєтесь з
+              <a href="#">умовами конфіденційності</a> користувача
+            </p>
+            <input
+              type="submit"
+              id="pay-button"
+              class="button pay_button"
+              value="ЗАБРОНЮВАТИ МІСЦЕ НА КУРСІ"
+            />
+          </form>
+        </div>
+      </section>
+
+      <div class="footer-svg"></div>
+
+      <footer>
+        <div class="footer-body">
+          <div class="contacts">
+            <p class="footer-link-wrapper">
+              <a class="footer-link" href="tel:+380442271736"
+                >+38 (044) 227-17-36</a
+              >
+            </p>
+            <p class="footer-link-wrapper">
+              <a class="footer-link" href="mailto:info@robocode.ua"
+                >INFO@ROBOCODE.UA</a
+              >
+            </p>
+          </div>
+
+          <div class="terms">
+            <p class="footer-link-wrapper">
+              <a class="footer-link" href="https://robocode.ua/policy-ua"
+                >ПРАВИЛА КОНФІДЕНЦІЙНОСТІ</a
+              >
+            </p>
+            <p class="footer-link-wrapper">
+              <a class="footer-link" href="https://robocode.ua/oferta-ua"
+                >ДОГОВІР ОФЕРТИ</a
+              >
+            </p>
+          </div>
+
+          <div class="socials">
+            <a
+              href="https://www.youtube.com/channel/UCnrQ113OjfXe8T2zuDvRmrw/featured"
+              ><img src="images/socials/youtube.svg"
+            /></a>
+            <a href="https://www.instagram.com/robocodepro"
+              ><img src="images/socials/instagram.svg"
+            /></a>
+            <a href="https://www.facebook.com/robocodepro?roistat_visit=20649"
+              ><img src="images/socials/facebook.svg"
+            /></a>
+            <a href="https://www.tiktok.com/@robocodepro?lang=ru-RU"
+              ><img src="images/socials/tiktok.svg"
+            /></a>
+            <a href="https://t.me/robocodepro"
+              ><img src="images/socials/telegram.svg"
+            /></a>
+          </div>
+
+          <div class="footer-logo">
+            <img src="images/logo.svg" class="logo" />
+            <p>Всі права застережено, 2021</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="paymant.js"></script>
+  </body>
+</html>
