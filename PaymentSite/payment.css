@@ -415,6 +415,10 @@ footer {
     align-self: center;
   }
 
+  .form-terms {
+    font-size: 0.9em;
+  }
+
   footer {
     grid-template-columns: 30px repeat(2, 1fr) 30px;
     height: auto;
