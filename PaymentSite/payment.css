@@ -448,6 +448,10 @@ footer {
     white-space: normal;
   }
 
+  .footer-svg > h1 {
+    font-size: 2em;
+  }
+
   .footer-body {
     display: flex;
     flex-direction: column;
