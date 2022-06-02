@@ -3,6 +3,8 @@ let headerSVG = document.querySelector(".header-svg");
 
 function renderSVG() {
   let headerLeftMatgin;
+  let w;
+  let h;
   headerSVG_width(800, 60);
 
   if (window.innerWidth > 1200) {
@@ -20,7 +22,7 @@ function renderSVG() {
     headerLeftMatgin = 30;
   }
 
-  let w = headerLeftMatgin + 270;
+  w = headerLeftMatgin + 270;
 
   let inner = `<svg
         width="${w}"

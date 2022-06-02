@@ -351,6 +351,10 @@ footer {
     border-bottom-right-radius: 20px; */
   }
 
+  header > .container {
+    gap: 25px;
+  }
+
   header > .container > h1 {
     font-size: 1.85em;
   }
@@ -380,6 +384,18 @@ footer {
     padding: 30px 30px;
     border-radius: 10px;
   } */
+
+  .order-container > h2 {
+    font-size: 1.9em;
+    line-height: 34px;
+    text-align: left;
+  }
+
+  .order-container > p {
+    font-size: 1.3em;
+    line-height: 25px;
+    text-align: left;
+  }
 
   .order-container > form {
     width: 100%;
@@ -426,12 +442,24 @@ footer {
     gap: 15px;
   }
 
-  .socials {
-    align-self: center;
+  .contacts,
+  .terms {
+    font-size: 1em;
+    font-weight: 700;
   }
 
-  .footer-logo .logo {
+  .socials {
     align-self: flex-start;
+    margin: 10px 0;
+  }
+
+  .footer-logo {
+    gap: 10px;
+  }
+
+  .footer-logo,
+  .footer-logo .logo {
+    align-self: center;
   }
 
   .order-container input[type="submit"] {
