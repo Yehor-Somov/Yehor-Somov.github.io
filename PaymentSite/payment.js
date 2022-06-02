@@ -3,18 +3,21 @@ let headerSVG = document.querySelector(".header-svg");
 
 function renderSVG() {
   let headerLeftMatgin;
-  headerSVG_width(800);
+  headerSVG_width(800, 60);
 
   if (window.innerWidth > 1200) {
     headerLeftMatgin = (document.body.clientWidth - 1170) / 2;
   } else if (window.innerWidth > 992) {
     headerLeftMatgin = 100;
   } else if (window.innerWidth > 768) {
-    headerSVG_width(600);
+    headerSVG_width(600, 60);
     headerLeftMatgin = 50;
+  } else if (window.innerWidth > 500) {
+    headerSVG_width(500, 60);
+    headerLeftMatgin = 30;
   } else {
-    headerSVG_width(500);
-    headerLeftMatgin = 20;
+    headerSVG_width(296, 26);
+    headerLeftMatgin = 30;
   }
 
   let w = headerLeftMatgin + 270;
@@ -47,7 +50,10 @@ window.addEventListener("resize", () => {
   renderSVG();
 });
 
-function headerSVG_width(width) {
+function headerSVG_width(width, height) {
   headerSVG.querySelector("svg").setAttribute("width", width);
-  headerSVG.querySelector("svg").setAttribute("viewBox", `0 0 ${width} 60`);
+  headerSVG.querySelector("svg").setAttribute("height", height);
+  headerSVG
+    .querySelector("svg")
+    .setAttribute("viewBox", `0 0 ${width} ${height}`);
 }
